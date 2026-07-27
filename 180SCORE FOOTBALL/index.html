@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>180SCORE — Live Odds & Predictions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Desktop sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-logo"><span class="num">180</span>SCORE</div>
+    <a href="#" class="nav-item active" data-nav>  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v6l5 3M7 9l5 3M17 9l-5 3M8 17l4-2 4 2"/></svg>
+     all matches </a>
+    <a href="premium.js" class="nav-item" data-nav>  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6z"/></svg>
+      premium </a>
+    <a href="about.js" class="nav-item" data-nav>  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+      about </a>
+    <a href="faq.html" class="nav-item" data-nav>  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v4a5 5 0 01-10 0z"/><path d="M7 5H3v2a4 4 0 004 4M17 5h4v2a4 4 0 01-4 4"/><path d="M12 13v4m-3 3h6"/></svg>
+      FAQ </a>
+    <a href="contact.html" class="nav-item" data-nav>  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg>
+      contact us </a>
+  </nav>
+
+  <!-- Drawer overlay + mobile nav -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <div class="drawer-logo"><span class="num">180</span>SCORE</div>
+    <a href="index.html" class="drawer-link active" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v6l5 3M7 9l5 3M17 9l-5 3M8 17l4-2 4 2"/></svg>
+      all matches </a>
+    <a href="premium.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6z"/></svg>
+      premium </a>
+    <a href="about.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+      about </a>
+    
+    <a href="faq.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg>
+      FAQ </a>
+      <a href="contact.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg>
+      contact us </a>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span style="width: 50%; height: 1.4px;"></span>
+    </button>
+    <div class="logo"><span class="num">180</span><span class="word">SCORE</span></div>
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search team…">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- PREDICTIONS CAROUSEL --
+  <div class="predictions-bar">
+    <button class="carousel-arrow" id="predPrev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="predictions-viewport">
+      <div class="predictions-track" id="predTrack">
+        <div class="predictions-page">
+          <button class="chip highlight">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>
+            BEST PREDICTIONS
+          </button>
+          <span class="chip-divider"></span>
+          <button class="chip"><span class="badge-icon" style="background:#3b82f6;">SA</span>Serie A</button>
+          <button class="chip"><span class="badge-icon" style="background:#dc2626;">LL</span>La Liga</button>
+        </div>
+        <div class="predictions-page">
+          <button class="chip"><span class="badge-icon" style="background:#059669;">PL</span>Premier League</button>
+          <button class="chip"><span class="badge-icon" style="background:#f59e0b;">BL</span>Bundesliga</button>
+          <button class="chip"><span class="badge-icon" style="background:#7c3aed;">L1</span>Ligue 1</button>
+        </div>
+        <div class="predictions-page">
+          <button class="chip"><span class="badge-icon" style="background:#0891b2;">MX</span>Liga MX</button>
+          <button class="chip"><span class="badge-icon" style="background:#16a34a;">BR</span>Brasileirão</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-arrow" id="predNext" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+  <div class="predictions-dots" id="predDots"></div>----->
+
+  <!-- DATES SWIPE STRIP -->
+  <div class="dates-bar">
+    <button class="date-btn live">LIVE</button>
+    <div class="dates-viewport" id="datesViewport">
+      <div class="dates-track" id="datesTrack"></div>
+    </div>
+    <button class="filter-btn" aria-label="Filter">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2l-7 8v6l-4-2v-4L3 6z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:10px;height:10px;"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </div>
+
+  
+
+  <!-- MATCHES -->
+  <main class="matches" id="matchesRoot">
+ 
+    <section class="league-group">
+      <div class="league-header">
+        <div class="flag" style="background:linear-gradient(to bottom,#006341 33%,#fff 33%,#fff 66%,#ce1126 66%);"></div>
+        <div><h3>Liga MX</h3><span>Mexico</span></div>
+      </div>
+ 
+      <div class="match-card" data-teams="atlante fc club america">
+        <div class="teams">
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#7f1d1d;">AT</span><span class="team-name">Atlante FC</span></div>
+            <span class="score">1</span>
+          </div>
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#eab308; color:#111;">CA</span><span class="team-name">Club America</span></div>
+            <span class="score">1</span>
+          </div>
+        </div>
+        <div class="prediction gradient">
+          <div class="pred-label">2X</div>
+          <div class="pred-stats">
+            <span class="pred-pct">79%</span>
+            <span class="pred-odd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>1.19</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="match-card" data-teams="club tijuana leon">
+        <div class="teams">
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#b91c1c;">CT</span><span class="team-name">Club Tijuana</span></div>
+            <span class="score">1</span>
+          </div>
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#166534;">LE</span><span class="team-name">Leon</span></div>
+            <span class="score">0</span>
+          </div>
+        </div>
+        <div class="prediction" style="background: rgb(55, 54, 54);">
+          <div class="pred-label">OVER 1.5</div>
+          <div class="pred-stats">
+            <span class="pred-pct">78%</span>
+            <span class="pred-odd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>1.23</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+ 
+    <section class="league-group">
+      <div class="league-header">
+        <div class="flag" style="background:#009c3b; position:relative;"></div>
+        <div><h3>Serie A</h3><span>Brazil</span></div>
+      </div>
+ 
+      <div class="match-card" data-teams="santos chapecoense">
+        <div class="teams">
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#111; border:1px solid #444;">SA</span><span class="team-name">Santos</span></div>
+            <span class="score" style="visibility:hidden;">0</span>
+          </div>
+          <div class="team">
+            <div class="team-info"><span class="crest" style="background:#065f46;">CH</span><span class="team-name">Chapecoense-sc</span></div>
+            <span class="score" style="visibility:hidden;">0</span>
+          </div>
+        </div>
+        <div class="prediction solid">
+          <div class="pred-label">UNDER 3.5</div>
+          <div class="pred-stats">
+            <span class="pred-pct">91%</span>
+            <span class="pred-odd"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg>1.45</span>
+          </div>
+        </div>
+        <div class="match-footer">
+          <span>22:30</span>
+          <button class="fav-btn" data-fav>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+
+  <!-- BOTTOM NAV (mobile only) -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#" class="nav-item active" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v6l5 3M7 9l5 3M17 9l-5 3M8 17l4-2 4 2"/></svg>
+      Matches </a>
+    <a href="#" class="nav-item" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6z"/></svg>
+      Favorites </a>
+    <a href="#" class="nav-item" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+      News </a>
+    <a href="#" class="nav-item" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v4a5 5 0 01-10 0z"/><path d="M7 5H3v2a4 4 0 004 4M17 5h4v2a4 4 0 01-4 4"/><path d="M12 13v4m-3 3h6"/></svg>
+      Competitions </a>
+    <a href="#" class="nav-item" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg>
+      Premium </a>
+  </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

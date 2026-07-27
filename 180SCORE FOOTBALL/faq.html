@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — 180SCORE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Drawer overlay + mobile nav -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <div class="drawer-logo"><span class="num">180</span>SCORE</div>
+    <a href="match.html" class="drawer-link active" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v6l5 3M7 9l5 3M17 9l-5 3M8 17l4-2 4 2"/></svg> all matches </a>
+    <a href="premium.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6z"/></svg> premium </a>
+    <a href="#" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg> about </a>
+    
+    <a href="faq.html" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg> FAQ </a>
+      <a href="#" class="drawer-link" data-nav> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9l-3 12M12 9l3 12"/></svg> contact us </a>
+  </nav>
+  
+  <!-- HEADER -->
+  <header class="topbar">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span style="width: 50%; height: 1.4px;"></span>
+    </button>
+    <div class="logo"><span class="num">FAQ</div>
+      <a class="close-btn" href="index.html" aria-label="Close">&times;</a>
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search team…">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+    </div>
+  </header>
+  
+
+
+<main class="faq-page">
+  <div class="faq-list" id="faqList">
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>How accurate are your predictions?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">Our predictions are based on statistics, team form, player performance, and expert analysis. While no prediction is guaranteed, we strive to provide high-quality and reliable tips.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Do you guarantee winning bets?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">No. Betting always involves risk. 180Score provides expert analysis to improve your decision-making, but we cannot guarantee winnings.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Do I need betting experience?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">Not at all. Whether you're a beginner or an experienced bettor, our simple predictions and clear analysis make it easy to follow.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>How will I know when new tips are available?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">Enable notifications in the app to receive instant alerts whenever new predictions are published.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Can I use 180Score on my phone?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">Absolutely! 180Score is designed to work smoothly on Android devices, with a fast and user-friendly experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Is 180Score available worldwide?</span>
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer-inner">
+          <p class="faq-answer">Yes. Anyone with internet access can use 180Score, though betting regulations vary by country.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="faq.js"></script>
+
+</body>
+</html>
